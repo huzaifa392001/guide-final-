@@ -10,17 +10,28 @@ var section = $("section")
 
 
 $(".show-menu").click(function(){
-    section.removeClass("show").addClass("hide");
+    section.removeClass("display-show").addClass("display-hide");
     const elementId = $(this).attr('data-id');
-    $("#"+elementId).removeClass("hide").addClass("show");
+    $("#"+elementId).removeClass("display-hide").addClass("display-show");
 })
 
-// $(window).scroll(function() {
-//     var scroll = $(document).scrollTop() > 200;
-//     if (scroll === true) {
-//       $("nav").removeClass("fixed-top").css("top" , "-200px");
-//     }
-//     else {
-//       $("nav").addClass("fixed-top").css("top" , "0");
-//     }
-// });
+
+$('.carousel').carousel({
+    interval: 2000
+})
+
+$("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
+  $(e.target)
+    .prev()
+    .find("i:last-child")
+    .toggleClass("fa-minus fa-plus");
+});
+
+
+var chapter = $(".single-chapter")
+
+$(".show-chapter").click(function(){
+  chapter.removeClass("display-show").addClass("display-hide");
+  const elementId = $(this).attr('data-id');
+  $("#"+elementId).removeClass("display-hide").addClass("display-show");
+})

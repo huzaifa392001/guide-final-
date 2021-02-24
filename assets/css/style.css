@@ -24,13 +24,15 @@ body{
     }
 }
 
-.hide{
+.display-hide{
     display: none!important;
     opacity: 0;
 }
 
-.show{
+.display-show{
     display: block;
+    animation-name: section;
+    animation-duration: 2s;
 }
 
 /* header */
@@ -395,11 +397,30 @@ header .navbar-expand-lg .navbar-nav .nav-link{
 }
 
 .contact-section .mydetails .socials{
-    width: fit-content;
-    margin-right: 0;
-    margin-left: auto;
+    padding: 0 40px ;
 }
 
+.contact-section .mydetails .socials .reply{
+    width: fit-content;
+}
+
+.contact-section .mydetails .socials .reply-btn{
+    color: #9e7540;
+    background: transparent;
+    font-size: 24px;
+    padding: 0;
+}
+
+.contact-section .mydetails .socials .reply .underline{
+    width: 5px;
+    height: 2px;
+    background-color: #9e7540;
+    transition: width 1s;
+}
+
+.contact-section .mydetails .socials .reply:hover .underline{
+    width: 100%;
+}
 .contact-section .mydetails .socials a{
     color: #333;
     margin-right: 10px;
@@ -552,7 +573,7 @@ header .navbar-expand-lg .navbar-nav .nav-link{
     border-radius: 10px;
     background-size: 0 100%;
     transition: background-size 1s 0s;
-    font-size: 22px;
+    font-size: 18px;
 } 
 
 .single-blog-section .comment-section .write-comment input:focus , .single-blog-section .comment-section .write-comment textarea:focus{
@@ -574,6 +595,133 @@ header .navbar-expand-lg .navbar-nav .nav-link{
     background-repeat: no-repeat;
     transition: background-size 0.5s 0s;
 }
+
 .write-comment button:hover{
     background-size: 100% 100%;
+}
+
+/* faq section */
+
+.myaccordion {
+    box-shadow: 5px 15px 10px #ddd;
+    border-radius: 10px;
+}
+  
+.myaccordion .card,
+.myaccordion .card:last-child .card-header {
+    border: none;
+}
+  
+.myaccordion .card-header {
+    border-bottom-color: #EDEFF0;
+    background: transparent;
+}
+  
+.myaccordion .fa-stack {
+    font-size: 20px;
+}
+  
+.myaccordion .btn {
+    width: 100%;
+    font-weight: bold;
+    color: #9e7540;
+    padding: 0;
+    font-size: 20px;
+}
+  
+.myaccordion .btn-link:hover,
+.myaccordion .btn-link:focus {
+    text-decoration: none;
+}
+  
+.myaccordion p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+} 
+
+/* book section */
+
+.book-section .book-heading h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.book-section .index , .book-section .single-chapter , .book-section .about-book{
+    background-color: rgba(158, 117, 64, 0.5);
+    box-shadow: 8px 20px 20px #9e7540;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.book-section .index h2{
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 2px 5px 10px #9e7540;
+    margin-bottom: 20px;
+}
+
+.book-section .index a:hover{
+    text-decoration: none;
+}
+
+.book-section .index ul{
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+.book-section .index ul li {
+    width: fit-content;
+    margin: 10px 0;
+}
+
+.book-section .index ul li a{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.book-section .index ul li a:hover{
+    text-decoration: none;
+}
+
+.book-section .index ul li .underline{
+    width: 5px;
+    height: 2px;
+    margin: 0;
+    background: linear-gradient(to right , #9e7540 , #fff);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: width 1s , background-size 1s;
+}
+
+.book-section .index ul li:hover .underline{
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.book-section .about-book ul{
+    padding: 0;
+    font-size: 24px;
+    list-style-type: none;
+    text-align: right;
+    color: #fff;
+    font-weight: 400;
+}
+
+.book-section .single-chapter .chapter-heading h1{
+    color: #333;
+    font-size: 3rem;
+    text-shadow: 2px 5px 10px #9e7540;
+    margin-bottom: 20px;
+}
+
+.book-section .single-chapter .chapter-content p , .book-section .about-book p{
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.8;
 }
