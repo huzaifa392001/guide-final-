@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guide</title>
     <!-- links -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Neuton&family=Parisienne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -18,7 +19,7 @@
         <!-- Image and text -->
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand m-auto show-menu" href="" data-id="home">
+                <a class="navbar-brand m-auto show-menu" href="#home" data-id="home">
                     <!-- <img src="assets/images/logo.png" height="90px" class="d-inline-block align-top" alt=""> -->
                     <h2><i class="mr-2 fas fa-book-open"></i>Guide.Com</h2>
                 </a>
@@ -59,21 +60,21 @@
               <div class="carousel-item active">
                 <img class="d-block w-100" src="assets/images/carousel-img-1.jpg" alt="First slide">
                 <div class="text">
-                    <h1>Guide</h1>
+                    <h1 class="heading">Guide</h1>
                     <h4>Every Book Of Your Choice!</h4>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="assets/images/carousel-img-2.jpg" alt="Second slide">
                 <div class="text">
-                    <h1>Guide</h1>
+                    <h1 class="heading">Guide</h1>
                     <h4>Every Book You Want!</h4>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="assets/images/carousel-img-3.jpg" alt="Third slide">
                 <div class="text">
-                    <h1>Guide</h1>
+                    <h1 class="heading">Guide</h1>
                     <h4>Every Book You Need!</h4>
                 </div>
               </div>
@@ -97,20 +98,20 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="imgs-area">
-                        <div class="background-img" style="background-image: url(assets/images/home.jpg);"></div>
+                        <div class="guide-img background-img"></div>
                         <!-- <img class="logo-img w-100" src="assets/images/home.jpg" alt="">                         -->
                     </div>
                 </div>
                 <div class="col-lg-6 mt-4">
                     <div class="text-area">
-                        <h1 class="heading">Guide.com</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quos. Quisquam voluptate doloribus, quasi optio iure saepe aperiam vel ratione?</p>
-                        <ul>
+                        <h1 class="heading guide-heading"></h1>
+                        <p class="guide-description"></p>
+                        <!-- <ul>
                             <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
                             <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
                             <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
                             <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
-                        </ul>    
+                        </ul>     -->
                     </div>
                 </div>
             </div>
@@ -124,8 +125,8 @@
             <div class="row">
                 <div class="col-lg-6 mt-4">
                     <div class="text-area">
-                        <h1 class="heading">About Us</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium repellendus consequatur ipsum sit veniam sequi voluptates atque, velit dignissimos quam. Recusandae temporibus ad quos obcaecati dignissimos vero cum reiciendis voluptatibus repellat eligendi. Commodi, optio. Repudiandae magni iusto minus delectus blanditiis eius nobis fugiat nemo ducimus placeat, voluptate veritatis ullam eum!</p>
+                        <h1 class="heading about-title">About Us</h1>
+                        <p class="about-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium repellendus consequatur ipsum sit veniam sequi voluptates atque, velit dignissimos quam. Recusandae temporibus ad quos obcaecati dignissimos vero cum reiciendis voluptatibus repellat eligendi. Commodi, optio. Repudiandae magni iusto minus delectus blanditiis eius nobis fugiat nemo ducimus placeat, voluptate veritatis ullam eum!</p>
                         <!-- <div class="consider mt-5">
                             <h3>Things. Why you consider us!</h3>
                             <ul>
@@ -139,7 +140,7 @@
                 </div>
                 <div class="col-lg-6 mt-2">
                     <div class="imgs-area">
-                        <div class="background-img" style="background-image: url(assets/images/home-img.jpg);"></div>
+                        <div class="background-img about-img"></div>
                     </div>
                 </div>
             </div>
@@ -149,39 +150,10 @@
     <!-- consider section -->
 
     <section class="consider-section display-hide section" id="why-us">
-        <div class="container">
-            <h1 class="mb-5">Things. Why you consider us!!</h1>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="consider-card mb-5">
-                        <div class="card-body">
-                            <i class="far fa-comment fa-3x mb-4"></i>
-                            <h2 class="card-title">Card title</h2>
-                            <hr>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex nisi est itaque deleniti officiis ullam eum, temporibus perspiciatis porro aspernatur adipisci neque. Unde laudantium aliquam, magni dignissimos, enim aspernatur maiores voluptatibus ab cum suscipit eveniet eius a recusandae in quidem nemo aperiam iusto nesciunt vitae. Beatae perferendis illo facilis eos, accusantium soluta modi adipisci facere. Maxime quasi nisi quam deleniti amet praesentium impedit, consequuntur culpa eligendi facilis ea numquam minima voluptates odio omnis? A itaque temporibus, eveniet assumenda dolor sint consectetur corporis saepe corrupti ullam fugit distinctio provident. Obcaecati soluta explicabo fuga nisi eaque quia voluptatem assumenda beatae necessitatibus?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="consider-card mb-5">
-                        <div class="card-body">
-                            <i class="far fa-comment fa-3x mb-4"></i>
-                            <h2 class="card-title">Card title</h2>
-                            <hr>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto provident corporis, eius soluta velit harum aspernatur eos magnam! Enim unde accusantium exercitationem architecto ducimus labore eligendi. Veniam quidem atque blanditiis? Sit amet cum accusamus est impedit corrupti, corporis illum fugit consequatur architecto perspiciatis eligendi harum voluptate odit voluptatem provident! Vero amet est, iure quidem iusto sed excepturi. Temporibus, tenetur exercitationem? Tempora at dicta corporis praesentium alias non dolore aperiam nobis.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="consider-card mb-5">
-                        <div class="card-body">
-                            <i class="far fa-comment fa-3x mb-4"></i>
-                            <h2>Card title</h2>
-                            <hr>
-                            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error delectus veritatis dolor ipsam aliquam mollitia asperiores omnis unde fugiat, aliquid blanditiis saepe, totam corrupti eaque corporis illo sit ea deserunt facilis expedita laborum sapiente quisquam! Maxime distinctio, reiciendis modi illo eos quo obcaecati? Saepe distinctio pariatur obcaecati nobis voluptates?</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="container mt-4">
+            <h1 class="mb-5 things-main-heading heading"></h1>
+            <div class="row things-data">
+                
             </div>
         </div>
     </section>
@@ -190,54 +162,12 @@
 
     <section class="blog-section display-hide section" id="blog">
         <div class="container">
-            <h1>Blogs</h1>
-            <div class="card mb-3">
-                <div class="d-flex p-3">
-                    <div class="img">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/carousel-img-1.jpg); height: 150px;"></div>
-                    </div>
-                    <div class="text">
-                        <h3 class="card-title">Special title treatment</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="single-blog.html" class="btn">Read More</a>
-                    </div>
-                </div>
-                <div class="card-footer text-muted text-center">
-                    2 days ago
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="d-flex p-3">
-                    <div class="img">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/carousel-img-1.jpg); height: 150px;"></div>
-                    </div>
-                    <div class="text">
-                        <h3 class="card-title">Special title treatment</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="single-blog.html" class="btn">Read More</a>
-                    </div>
-                </div>
-                <div class="card-footer text-muted text-center">
-                    2 days ago
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="d-flex p-3">
-                    <div class="img">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/carousel-img-1.jpg); height: 150px;"></div>
-                    </div>
-                    <div class="text">
-                        <h3 class="card-title">Special title treatment</h3>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="single-blog.html" class="btn">Read More</a>
-                    </div>
-                </div>
-                <div class="card-footer text-muted text-center">
-                    2 days ago
-                </div>
+            <h1 class="blog-heading heading"></h1>
+            <div class="blog-data">
+                
             </div>
             <div class="rm-btn text-right w-100">
-                <a href="blog.html" class="btn">Read More</a>
+                <a href="blog.html#all-blogs" class="btn">Read More</a>
             </div>
         </div>
     </section>
@@ -247,114 +177,16 @@
     <section class="library-section display-hide section" id="library">
         <div class="container">
             <div class="text-center heading">
-                <h1>Library</h1>
+                <h1 class="library-heading"></h1>
             </div>
-            <div class="row">
-                <div class="w-100 col-12 text-right">
-                    <div class="w-50 d-flex search ml-auto mr-0 mb-3">
-                        <input class="ml-auto" type="text">
-                        <button class="btn"><i class="fas fa-search"></i></button>
-                    </div>
+            <div class="w-100 text-right">
+                <div class="w-50 d-flex search ml-auto mr-0 mb-3">
+                    <input class="ml-auto" type="text">
+                    <button class="btn"><i class="fas fa-search"></i></button>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-book card">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/book-1.jpg);"></div>
-                        <hr>
-                        <div class="book-text">
-                            <h3 class="book-title">Book Title</h3>
-                            <p class="book-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, maxime!</p>
-                            <a href="book.html" class="btn book-btn w-100">Read Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-book card">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/book-1.jpg);"></div>
-                        <hr>
-                        <div class="book-text">
-                            <h3 class="book-title">Book Title</h3>
-                            <p class="book-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, maxime!</p>
-                            <a href="book.html" class="btn book-btn w-100">Read Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-book card">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/book-1.jpg);"></div>
-                        <hr>
-                        <div class="book-text">
-                            <h3 class="book-title">Book Title</h3>
-                            <p class="book-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, maxime!</p>
-                            <a href="book.html" class="btn book-btn w-100">Read Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-book card">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/book-1.jpg);"></div>
-                        <hr>
-                        <div class="book-text">
-                            <h3 class="book-title">Book Title</h3>
-                            <p class="book-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, maxime!</p>
-                            <a href="book.html" class="btn book-btn w-100">Read Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-book card">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/book-1.jpg);"></div>
-                        <hr>
-                        <div class="book-text">
-                            <h3 class="book-title">Book Title</h3>
-                            <p class="book-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, maxime!</p>
-                            <a href="book.html" class="btn book-btn w-100">Read Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-book card">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/book-1.jpg);"></div>
-                        <hr>
-                        <div class="book-text">
-                            <h3 class="book-title">Book Title</h3>
-                            <p class="book-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, maxime!</p>
-                            <a href="book.html" class="btn book-btn w-100">Read Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-book card">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/book-1.jpg);"></div>
-                        <hr>
-                        <div class="book-text">
-                            <h3 class="book-title">Book Title</h3>
-                            <p class="book-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, maxime!</p>
-                            <a href="book.html" class="btn book-btn w-100">Read Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-book card">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/book-1.jpg);"></div>
-                        <hr>
-                        <div class="book-text">
-                            <h3 class="book-title">Book Title</h3>
-                            <p class="book-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, maxime!</p>
-                            <a href="book.html" class="btn book-btn w-100">Read Book</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-book card">
-                        <div class="bg-img w-100" style="background-image: url(assets/images/book-1.jpg);"></div>
-                        <hr>
-                        <div class="book-text">
-                            <h3 class="book-title">Book Title</h3>
-                            <p class="book-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, maxime!</p>
-                            <a href="book.html" class="btn book-btn w-100">Read Book</a>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="row books-data">
+                
             </div>
         </div>
     </section>
@@ -364,25 +196,15 @@
     <section class="contact-section display-hide section" id="contact">
         <div class="container">
             <div class="text-center">
-                <h1>Contact Us</h1>
-                <p class="asap">We will get back to you ASAP!</p>
+                <h1 class="heading contact-heading"></h1>
+                <p class="asap contact-tagline"></p>
             </div>
             <div class="row">
                 <div class="col-lg-6 mt-5">
                     <div class="mydetails">
-                        <ul>
-                            <li>
-                                <p>Guide.com is a online platform for students to get knowledge of thier selected subject!</p>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i><p>info@guide.com</p>
-                            </li>
-                            <li>
-                                <i class="fab fa-whatsapp"></i><p>123456789</p>
-                            </li>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i><p>Unit No: 04 , Latifabad Hyderabad , Sindh</p>
-                            </li>
+                        <p class="contact-description"></p>
+                        <ul class="list-data">                            
+                           
                         </ul>
                         <div class="socials d-flex justify-content-between">
                             <div class="reply">
@@ -427,9 +249,8 @@
     </section>
 
 
-
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Page End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>

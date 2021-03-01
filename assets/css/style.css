@@ -1,7 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #f4f9f9;
-    font-family: 'Neuton', serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
+}
+
+.heading{
+    font-family: 'Neuton', serif!important;
 }
 
 .carousel{
@@ -14,6 +22,43 @@ body{
     animation-name: section;
     animation-duration: 2s;
 }
+
+#button {
+    display: inline-block;
+    background-color: #9e7540;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button i{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color:#9e7540;
+}
+
+#button:active {
+    background-color:#9e7540;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}  
 
 @keyframes section{
     from{
@@ -396,6 +441,11 @@ header .navbar-expand-lg .navbar-nav .nav-link{
     margin: auto 0;
 }
 
+.contact-section .mydetails .contact-description{
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
 .contact-section .mydetails .socials{
     padding: 0 40px ;
 }
@@ -660,6 +710,7 @@ header .navbar-expand-lg .navbar-nav .nav-link{
     font-size: 2.5rem;
     text-shadow: 2px 5px 10px #9e7540;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .book-section .index a:hover{
@@ -676,16 +727,17 @@ header .navbar-expand-lg .navbar-nav .nav-link{
     margin: 10px 0;
 }
 
-.book-section .index ul li a{
+.book-section .index ul .chapter-title{
     color: #fff;
     font-size: 20px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    cursor: pointer;
 }
-
+/* 
 .book-section .index ul li a:hover{
     text-decoration: none;
-}
+} */
 
 .book-section .index ul li .underline{
     width: 5px;
